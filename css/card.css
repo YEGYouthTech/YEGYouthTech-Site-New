@@ -1,0 +1,181 @@
+/* https://hen-ry.com/ */
+
+.intro-card {
+    margin: auto;
+    width: 762px;
+    height: 564px;
+    background: radial-gradient(50% 70.31% at 50% 0%, rgba(126, 61, 255, 0.16) 0%, rgba(126, 61, 255, 0) 100%), rgba(11, 1, 29, 0.8);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 16px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+
+.intro-card {
+    border: 1px solid rgba(255, 255, 255, 0)
+}
+
+.intro-card:before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    padding: 1px;
+    background: linear-gradient(105.43deg, rgba(168, 128, 255, 0) 25.1%, rgba(168, 128, 255, 0.32) 72.57%, rgba(168, 128, 255, 0) 102.57%),
+        linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.intro-card {
+    -webkit-text-size-adjust: 100%;
+    --bg-color: rgb(20, 20, 20);
+    --card-color: rgb(23, 23, 23);
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    overflow: hidden;
+    max-width: 744px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 762px;
+    height: 564px;
+    background: radial-gradient(50% 70.31% at 50% 0%, rgba(126, 61, 255, 0.16) 0%, rgba(126, 61, 255, 0) 100%), rgba(11, 1, 29, 0.8);
+    backdrop-filter: blur(16px);
+    border-radius: 16px;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.intro-card .circles-grid-img {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 744px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.intro-card .intro-card-blur {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: .5;
+}
+
+.card-heading {
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-top: 0;
+    margin-bottom: .4em;
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: -.025em
+}
+
+.card-subtitle {
+    text-align: center;
+    position: relative;
+    z-index: 8;
+    margin-bottom: 2em;
+    color: #b6adc8;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400
+}
+
+.card-cta {
+    position: relative;
+    z-index: 50;
+    padding: 8px 16px;
+    border-radius: 999px;
+    -webkit-transition: 222ms;
+    transition: 222ms;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    background: radial-gradient(57.38% 100% at 50% 0%, rgba(168, 128, 255, 0.12) 0%, rgba(168, 128, 255, 0) 100%), rgba(255, 255, 255, 0.05);
+    box-shadow: inset 0px 0px 4px 2px rgba(168, 128, 255, 0.1);
+    text-decoration: none;
+}
+
+.card-cta {
+    width: fit-content;
+    border: 1px solid rgba(255, 255, 255, 0.1)
+}
+
+.card-cta:before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    border-radius: 50px;
+    padding: 1px;
+    background: linear-gradient(15deg, rgba(168, 128, 255, 0) 10.99%, rgba(168, 128, 255, 0.32) 26%, rgba(168, 128, 255, 0) 37%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.card-cta:hover {
+    background-color: hsla(0, 0%, 100%, .1)
+}
+
+.card-blur {
+    position: absolute;
+    left: 15%;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    z-index: 1;
+    display: block;
+    width: 40%;
+    height: 40%;
+    background-image: linear-gradient(135deg, rgba(255, 128, 0, .1), rgba(47, 0, 255, .1));
+    -webkit-filter: blur(100px);
+    filter: blur(100px);
+}
+
+.span-dwc {
+    color: #f9efff
+}

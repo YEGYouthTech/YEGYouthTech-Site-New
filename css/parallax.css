@@ -1,0 +1,44 @@
+/* https://codepen.io/patrickwestwood/pen/MyoBaY */
+
+.parallax {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100vh;
+}
+
+
+.layer {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-position: bottom center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: -1;
+	transition: top 1s ease-in-out;
+}
+
+.layer-1 {
+	background-image: url("../img/landing/webp/3.webp");
+	transition-delay: 900ms;
+}
+
+.layer-2 {
+	background-image: url("../img/landing/webp/2.webp");
+	transition-delay: 700ms;
+}
+
+.layer-3 {
+	background-image: url("../img/landing/webp/1.webp");
+	transition-delay: 300ms;
+}
+
+.parallax .layer:not(.loaded) {
+	top: 100vh;
+}
