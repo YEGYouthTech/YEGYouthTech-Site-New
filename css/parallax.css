@@ -24,6 +24,10 @@
 	transition: top 1s ease-in-out;
 }
 
+[data-type="parallax"] {
+	will-change: transform;
+}
+
 .layer-1 {
 	background-image: url("../img/landing/webp/3.webp");
 	transition-delay: 900ms;

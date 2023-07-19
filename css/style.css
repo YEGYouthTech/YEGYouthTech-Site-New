@@ -1,5 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, #0e1118, #232b3e) no-repeat center center / cover;
+    background-attachment: fixed;
 }
 
 .mask {
@@ -8,7 +14,7 @@ body {
 }
 
 #hero .title {
-    font-size: clamp(2rem, 6vw, 8rem);
+    font-size: clamp(1rem, 6vw, 8rem);
     position: absolute;
     top: 0;
     left: 0;
@@ -38,7 +44,7 @@ body {
 }
 
 #hero .subtitle {
-    font-size: clamp(.8rem, 2.4vw, 2rem);
+    font-size: clamp(.5rem, 2.4vw, 2rem);
     position: relative;
     z-index: 1;
     margin: 0;
@@ -65,6 +71,8 @@ body {
     padding: 20px 0;
     position: relative;
     text-align: center;
+    margin-left: -.4ch;
+    margin-right: -.8ch;
 }
 
 .hand-underline.aos-animate .hand-underline-stroke:nth-child(2) {
@@ -106,7 +114,7 @@ body {
 .scroll {
     position: absolute;
     bottom: 4rem;
-    left: calc(50% - 85px);
+    left: calc(50% - 101px);
     width: 170px;
     padding: 1rem;
     color: #60a5fa;

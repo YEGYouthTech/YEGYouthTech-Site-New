@@ -171,3 +171,17 @@ nav .nav-logo-img {
 nav a:first-child {
     width: 32px;
 }
+
+@media screen and (max-width: 991px){ 
+    nav {
+        flex-direction: column;
+        height: auto;
+        transform: none !important;
+    }
+
+    nav .nav-line {
+        height: 1px;
+        width: 80%;
+        margin: 0.25rem 0;
+    }
+}

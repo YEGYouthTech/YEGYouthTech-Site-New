@@ -98,8 +98,6 @@
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
     margin-top: 0;
     margin-bottom: .4em;
     font-size: 56px;
@@ -117,7 +115,8 @@
     color: #b6adc8;
     font-size: 20px;
     line-height: 28px;
-    font-weight: 400
+    font-weight: 400;
+    max-width: 550px;
 }
 
 .card-cta {
@@ -178,4 +177,52 @@
 
 .span-dwc {
     color: #f9efff
+}
+
+@media screen and (max-width: 991px) {
+    .intro-card {
+        width: 700px;
+        max-width: 700px;
+        margin-right: auto;
+        margin-left: auto
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .intro-card {
+        width: 500px;
+        height: 450px;
+        max-height: 450px;
+        max-width: 500px
+    }
+        
+    .card-cta,.card-subtitle {
+        font-size: 16px
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .intro-card {
+        width: 326px;
+        height: 416px;
+        max-height: 416px;
+        max-width: 326px;
+        padding-right: 24px;
+        padding-left: 24px
+    }
+
+    .card-heading {
+        margin-bottom: 16px;
+        font-size: 32px;
+        line-height: 40px
+    }
+
+    .card-subtitle {
+        line-height: 24px;
+        text-align: center
+    }
+
+    .card-cta {
+        font-size: 14px
+    }
 }

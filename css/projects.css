@@ -1,0 +1,250 @@
+.coco {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.coco .project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+    align-items: center;
+    width: 100%;
+}
+
+.coco .project-container>.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.coco .project-container>.right {
+    display: flex;
+    position: relative;
+    padding-top: 6rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.coco .project-container .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.coco .project-container .title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    color: #F3F4F6;
+}
+
+.coco .project-container .title {
+    margin-bottom: 1.5rem; 
+    font-size: 2.25rem;
+    line-height: 2.5rem; 
+    font-weight: 700; 
+    text-align: center; 
+    background: linear-gradient(to right, #7dd3fc, #6ee7b7) no-repeat center center / 100% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.coco .project-container .description {
+    margin-top: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    line-height: 1.75rem;
+    text-align: center;
+    color: #F3F4F6;
+}
+
+.coco .project-container .description.subtle {
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    opacity: 60%;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 1.5rem;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.button {
+    /* group relative inline-block inline-flex min-w-[6rem] items-center justify-start overflow-hidden rounded-md px-6 py-3 font-bold */
+    position: relative;
+    display: inline-block;
+    display: inline-flex;
+    min-width: 6rem;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    border-radius: .375rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 700;
+}
+
+.button .button-decor {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 8rem;
+    width: 8rem;
+    transform: translateX(3rem) translateY(-0.5rem) rotate(45deg);
+    background-color: transparent;
+    opacity: 3%;
+}
+
+.button .button-decor-2 {
+    /* absolute top-0 left-0 -mt-1 h-48 w-48 -translate-x-56 -translate-y-24 rotate-45 bg-gray-100 opacity-100 transition-transform duration-500 ease-in-out group-hover:-translate-x-8 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -0.25rem;
+    height: 12rem;
+    width: 12rem;
+    transform: translateX(-14rem) translateY(-6rem) rotate(45deg);
+    background-color: #F3F4F6;
+    opacity: 1;
+    transition: transform .5s ease-in-out;
+}
+
+.button:hover .button-decor-2 {
+    transform: translateX(-2rem) translateY(-6rem) rotate(45deg);
+}
+
+.button .button-content {
+    /* relative w-full font-montserrat text-gray-100 transition-colors duration-500 ease-in-out group-hover:text-[#0e0e0e] */
+    position: relative;
+    width: 100%;
+    color: #F3F4F6;
+    transition: color .5s ease-in-out;
+}
+
+.button:hover .button-content {
+    color: #0E0E0E;
+}
+
+.button .button-content .button-content-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+.coco .project-container .contributors {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: row;
+    gap: 0.25rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.coco .project-container .contributors .contributor {
+    position: relative;
+    color: #D1D5DB;
+    text-decoration: none;
+}
+
+.coco .project-container .contributors .contributor:hover {
+    z-index: 10;
+}
+
+.coco .project-container .contributors .contributor .avatar {
+    border-radius: 9999px;
+    width: 2rem;
+    height: 2rem;
+    transition: all 300ms ease;
+}
+
+.coco .project-container .contributors .contributor:hover .avatar {
+    transform: scale(1.5);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.coco .project-container .contributors .contributor .tooltip {
+    display: none;
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 2.25rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coco .project-container .contributors .contributor:hover .tooltip {
+    display: flex;
+}
+
+.coco .project-container .contributors .contributor .tooltip .tooltip-text {
+    position: relative;
+    z-index: 10;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    line-height: 1;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, .8);
+    white-space: nowrap;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.coco .project-container .contributors .contributor .tooltip .arrow {
+    margin-top: -0.5rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+
+@media (min-width: 768px) {
+    .coco .project-container {
+        flex-direction: row;
+    }
+
+    .coco .project-container>.left {
+        width: 50%;
+    }
+
+    .coco .project-container>.right {
+        margin-top: 0;
+        width: 50%;
+    }
+}
+
+.animate-textFloat {
+    animation: textFloat 5s linear infinite;
+}
+
+@keyframes textFloat {
+    0% {
+        transform: translateY(0);
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-16px);
+        transform: translateY(-16px);
+    }
+
+    100% {
+        transform: translateY(0);
+        transform: translateY(0px);
+    }
+}
